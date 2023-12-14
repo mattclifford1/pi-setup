@@ -1,4 +1,5 @@
 #!/bin/bash
+# make sure to be using 32bit OS
 
 echo 'alias Syu="sudo apt update && sudo apt upgrade -y"' >> ~/.bashrc
 source ~/.bashrc
