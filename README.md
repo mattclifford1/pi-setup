@@ -2,4 +2,4 @@
 
 Raspberry Pi setup script for raspotify
 
-make sure to be using 32bit OS!
+Use the headless (lite) version of raspberry pi OS
