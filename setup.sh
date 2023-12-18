@@ -1,6 +1,8 @@
 #!/bin/bash
 
 echo 'alias Syu="sudo apt update && sudo apt upgrade -y"' >> ~/.bashrc
+echo 'alias temp="watch -n 2 vcgencmd measure_temp"' >> ~/.bashrc
+
 source ~/.bashrc
 sudo apt update && sudo apt upgrade -y
 
