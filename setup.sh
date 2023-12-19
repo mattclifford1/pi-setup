@@ -3,6 +3,11 @@
 echo 'alias Syu="sudo apt update && sudo apt upgrade -y"' >> ~/.bashrc
 echo 'alias temp="watch -n 2 vcgencmd measure_temp"' >> ~/.bashrc
 
+# remove lights
+echo "dtparam=pwr_led_activelow=off" | sudo tee -a /boot/config.txt 
+echo "dtparam=act_led_trigger=none" | sudo tee -a /boot/config.txt
+echo "dtparam=act_led_activelow=off" | sudo tee -a /boot/config.txt
+
 source ~/.bashrc
 sudo apt update && sudo apt upgrade -y
 
