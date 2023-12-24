@@ -4,6 +4,7 @@ echo 'alias Syu="sudo apt update && sudo apt upgrade -y"' >> ~/.bashrc
 echo 'alias temp="watch -n 2 vcgencmd measure_temp"' >> ~/.bashrc
 
 sudo apt update && sudo apt upgrade -y
+sudo apt install git -y
 
 # remove light  -   https://forums.raspberrypi.com/viewtopic.php?t=328550
 echo 0  | sudo tee /sys/class/leds/led0/brightness
