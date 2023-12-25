@@ -26,3 +26,4 @@ sudo ./install.sh
 # raspotify - you can edit the config in the file /etc/raspotify/conf
 # sudo apt-get -y install curl && curl -sL https://dtcooper.github.io/raspotify/install.sh | sh
 
+sudo reboot
