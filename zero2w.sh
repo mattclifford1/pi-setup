@@ -18,12 +18,12 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install git -y
 
 # libs for pirate audio
-apt install -y python3-rpi.gpio python3-spidev python3-pip python3-pil python3-numpy libopenjp2-7
+sudo apt install -y python3-rpi.gpio python3-spidev python3-pip python3-pil python3-numpy libopenjp2-7
 # Enable SPI
-raspi-config nonint do_spi 0
+sudo raspi-config nonint do_spi 0
 # Add necessary lines to config.txt (if they don't exist)
-add_to_config_text "gpio=25=op,dh" /boot/config.txt
-add_to_config_text "dtoverlay=hifiberry-dac" /boot/config.txt
+sudo add_to_config_text "gpio=25=op,dh" /boot/config.txt
+sudo add_to_config_text "dtoverlay=hifiberry-dac" /boot/config.txt
 # Install support plugins for Pirate Audio
 inform "Installing Pirate Audio plugins..."
 pip3 install --upgrade pidi-display-pil pidi-display-st7789
