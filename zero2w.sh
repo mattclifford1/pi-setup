@@ -14,7 +14,8 @@ function add_to_config_text {
 echo 'alias Syu="sudo apt update && sudo apt upgrade -y"' >> ~/.bashrc
 echo 'alias temp="watch -n 2 vcgencmd measure_temp"' >> ~/.bashrc
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update 
+# sudo apt upgrade -y
 sudo apt install git -y
 
 # libs for pirate audio
