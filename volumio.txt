@@ -1,0 +1,16 @@
+Notes on how to set up Volumio
+
+1) Download their .img from website (pi imager version doesn't work)
+    - https://volumio.com/en/get-started/
+
+2) Flash using imager (don't need to use user config)
+
+3) Setup from app/web 
+    - enable DAC - I2S (HifiBerry DAC option for pirate audio) 
+    - pirate audio plugin
+    - spotify plugin
+    - youtube cast?
+    - bluetooth?? - not available on free :(
+    - soundcloud?
+    - mixcloud?
+    - DSP?
