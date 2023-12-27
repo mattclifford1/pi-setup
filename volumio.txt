@@ -13,4 +13,10 @@ Notes on how to set up Volumio
     - bluetooth?? - not available on free :(
     - soundcloud?
     - mixcloud?
-    - DSP?
+    - DSP
+
+4) enable ssh at http://yourvolumioip/dev
+    - username: volumio
+    - password: volumio
+
+
