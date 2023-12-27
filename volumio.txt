@@ -6,7 +6,8 @@ Notes on how to set up Volumio
 2) Flash using imager (don't need to use user config)
 
 3) Setup from app/web 
-    - enable DAC - I2S (HifiBerry DAC option for pirate audio) 
+    - enable DAC - I2S on (HifiBerry DAC option for pirate audio) 
+    - Mixer type - software  (http://ip/plugin/audio_interface-alsa_controller)
     - pirate audio plugin
     - spotify plugin
     - youtube cast?
