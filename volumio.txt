@@ -8,16 +8,19 @@ Notes on how to set up Volumio
 3) Setup from app/web 
     - enable DAC - I2S on (HifiBerry DAC option for pirate audio) 
     - Mixer type - software  (http://ip/plugin/audio_interface-alsa_controller)
-    - pirate audio plugin
+    - pirate audio plugin (change GPIO button)
     - spotify plugin
-    - youtube cast?
+    - youtube cast
     - bluetooth?? - not available on free :(
     - soundcloud?
-    - mixcloud?
-    - DSP
+    - DSP (mono etc.)
 
 4) enable ssh at http://yourvolumioip/dev
     - username: volumio
     - password: volumio
 
-
+5) keyboard for volumio knob (https://community.volumio.com/t/guide-keyboard-shortcuts-with-triggerhappy/4826/14)
+    - ssh in and triggerhappy should already be installed (sudo apt-get install triggerhappy)
+    - sudo nano /etc/triggerhappy/triggers.d/audio.conf
+    - assign mute to e.g. pause play (KEY_MUTE 1 /usr/local/bin/volumio toggle)
+    - restart service (sudo systemctl restart triggerhappy)
